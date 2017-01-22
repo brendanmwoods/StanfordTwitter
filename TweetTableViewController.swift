@@ -8,6 +8,9 @@
 
 import UIKit
 import Twitter
+import CoreData
+
+
 
 class TweetTableViewController: UITableViewController, UITextFieldDelegate {
 
@@ -63,14 +66,57 @@ class TweetTableViewController: UITableViewController, UITextFieldDelegate {
             request.fetchTweets(handler: { [weak weakSelf = self] (newTweets) in
                 DispatchQueue.main.async {
                     if request == weakSelf?.lastTwitterRequest {
+                        // if we get tweets...
                         if !newTweets.isEmpty {
+                            //add the new tweets to our array or arrays
                             weakSelf?.tweets.insert(newTweets, at: 0)
+                            
+                            //update the database with the new tweets
+                            weakSelf?.updateDatabase(newTweets: newTweets)
                         }
                     }
                 }
             })
         }
     }
+    
+    private func updateDatabase(newTweets:[Twitter.Tweet])
+    {
+        managedObjectContext?.perform {
+            
+            for tweetInfo in newTweets {
+                    // create a new unique tweet with the twitterInfoauto
+                _ = TweetEntity2.tweetWithTwitterInfo(twitterInfo: tweetInfo, inManagedObjectContext:self.managedObjectContext!)
+            }
+            
+            do {
+                try self.managedObjectContext?.save()
+            } catch let error {
+                print(error)
+            }
+        }
+        
+        printDatabaseStatistics()
+        print("done printing statistics")
+    }
+    
+    private func printDatabaseStatistics()
+    {
+        managedObjectContext?.perform {
+            if let results = try? self.managedObjectContext!.fetch(NSFetchRequest(entityName: "TwitterUserEntity2")) {
+                print("\(results.count) twitter users")
+            }
+            
+            if let results = try? self.managedObjectContext!.fetch(NSFetchRequest(entityName: "TweetEntity2")) {
+                print("\(results.count) tweets")
+            }
+        }
+    }
+    
+    // MARK: - Model
+    
+    var managedObjectContext = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+    
     
     // MARK: - Table view data source
 

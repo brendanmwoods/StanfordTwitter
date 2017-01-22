@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4CA5F91E3565C400D0ADB5 /* TweetEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5F51E3565C400D0ADB5 /* TweetEntity+CoreDataClass.swift */; };
+		BC4CA5FA1E3565C400D0ADB5 /* TweetEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5F61E3565C400D0ADB5 /* TweetEntity+CoreDataProperties.swift */; };
+		BC4CA5FB1E3565C400D0ADB5 /* TwitterUserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5F71E3565C400D0ADB5 /* TwitterUserEntity+CoreDataClass.swift */; };
+		BC4CA5FC1E3565C400D0ADB5 /* TwitterUserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5F81E3565C400D0ADB5 /* TwitterUserEntity+CoreDataProperties.swift */; };
+		BC4CA6011E35669700D0ADB5 /* TweetEntity2+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5FD1E35669700D0ADB5 /* TweetEntity2+CoreDataClass.swift */; };
+		BC4CA6021E35669700D0ADB5 /* TweetEntity2+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5FE1E35669700D0ADB5 /* TweetEntity2+CoreDataProperties.swift */; };
+		BC4CA6031E35669700D0ADB5 /* TwitterUserEntity2+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA5FF1E35669700D0ADB5 /* TwitterUserEntity2+CoreDataClass.swift */; };
+		BC4CA6041E35669700D0ADB5 /* TwitterUserEntity2+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4CA6001E35669700D0ADB5 /* TwitterUserEntity2+CoreDataProperties.swift */; };
+		BC9A821B1E3562A200732527 /* TwitterModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC9A82191E3562A200732527 /* TwitterModel.xcdatamodeld */; };
 		BCD9ADAD1E31527F00F6F27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9ADAC1E31527F00F6F27E /* AppDelegate.swift */; };
 		BCD9ADB21E31527F00F6F27E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD9ADB01E31527F00F6F27E /* Main.storyboard */; };
-		BCD9ADB51E31527F00F6F27E /* StanfordTwitter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCD9ADB31E31527F00F6F27E /* StanfordTwitter.xcdatamodeld */; };
 		BCD9ADB71E31527F00F6F27E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD9ADB61E31527F00F6F27E /* Assets.xcassets */; };
 		BCD9ADBA1E31527F00F6F27E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD9ADB81E31527F00F6F27E /* LaunchScreen.storyboard */; };
 		BCD9ADC51E31528000F6F27E /* StanfordTwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9ADC41E31528000F6F27E /* StanfordTwitterTests.swift */; };
@@ -18,7 +26,6 @@
 		BCD9ADE71E316A1A00F6F27E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD9ADE61E316A1A00F6F27E /* Twitter.framework */; };
 		BCD9ADE91E31816A00F6F27E /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD9ADE81E31816A00F6F27E /* TweetTableViewCell.swift */; };
 		BCEF3F761E353BA800ECC522 /* TweetersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF3F751E353BA800ECC522 /* TweetersTableViewController.swift */; };
-		BCEF3F791E353D7500ECC522 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCEF3F771E353D7500ECC522 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC4CA5F51E3565C400D0ADB5 /* TweetEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TweetEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC4CA5F61E3565C400D0ADB5 /* TweetEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TweetEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC4CA5F71E3565C400D0ADB5 /* TwitterUserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TwitterUserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC4CA5F81E3565C400D0ADB5 /* TwitterUserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TwitterUserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC4CA5FD1E35669700D0ADB5 /* TweetEntity2+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TweetEntity2+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC4CA5FE1E35669700D0ADB5 /* TweetEntity2+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TweetEntity2+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC4CA5FF1E35669700D0ADB5 /* TwitterUserEntity2+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TwitterUserEntity2+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC4CA6001E35669700D0ADB5 /* TwitterUserEntity2+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TwitterUserEntity2+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC9A821A1E3562A200732527 /* TwitterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitterModel.xcdatamodel; sourceTree = "<group>"; };
 		BCD9ADA91E31527F00F6F27E /* StanfordTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanfordTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD9ADAC1E31527F00F6F27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD9ADB11E31527F00F6F27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCD9ADB41E31527F00F6F27E /* StanfordTwitter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StanfordTwitter.xcdatamodel; sourceTree = "<group>"; };
 		BCD9ADB61E31527F00F6F27E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD9ADB91E31527F00F6F27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD9ADBB1E31527F00F6F27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +71,6 @@
 		BCD9ADE61E316A1A00F6F27E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = "../../../Library/Developer/Xcode/DerivedData/StanfordTwitterWorkspace-ewnjshcraucwxedkddowkpyoadbu/Build/Products/Debug-iphoneos/Twitter.framework"; sourceTree = "<group>"; };
 		BCD9ADE81E31816A00F6F27E /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		BCEF3F751E353BA800ECC522 /* TweetersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetersTableViewController.swift; sourceTree = "<group>"; };
-		BCEF3F781E353D7500ECC522 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC4CA6051E35677B00D0ADB5 /* Garbage */ = {
+			isa = PBXGroup;
+			children = (
+				BC4CA5F51E3565C400D0ADB5 /* TweetEntity+CoreDataClass.swift */,
+				BC4CA5F61E3565C400D0ADB5 /* TweetEntity+CoreDataProperties.swift */,
+				BC4CA5F71E3565C400D0ADB5 /* TwitterUserEntity+CoreDataClass.swift */,
+				BC4CA5F81E3565C400D0ADB5 /* TwitterUserEntity+CoreDataProperties.swift */,
+			);
+			name = Garbage;
+			sourceTree = "<group>";
+		};
+		BC9A82241E35635B00732527 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC4CA5FD1E35669700D0ADB5 /* TweetEntity2+CoreDataClass.swift */,
+				BC4CA5FE1E35669700D0ADB5 /* TweetEntity2+CoreDataProperties.swift */,
+				BC4CA5FF1E35669700D0ADB5 /* TwitterUserEntity2+CoreDataClass.swift */,
+				BC4CA6001E35669700D0ADB5 /* TwitterUserEntity2+CoreDataProperties.swift */,
+				BC4CA6051E35677B00D0ADB5 /* Garbage */,
+				BC9A82191E3562A200732527 /* TwitterModel.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		BCD9ADA01E31527F00F6F27E = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +147,8 @@
 		BCD9ADAB1E31527F00F6F27E /* StanfordTwitter */ = {
 			isa = PBXGroup;
 			children = (
+				BC9A82241E35635B00732527 /* Core Data */,
 				BCD9ADAC1E31527F00F6F27E /* AppDelegate.swift */,
-				BCEF3F771E353D7500ECC522 /* Model.xcdatamodeld */,
 				BCD9ADDD1E3158D400F6F27E /* TweetTableViewController.swift */,
 				BCD9ADB01E31527F00F6F27E /* Main.storyboard */,
 				BCEF3F751E353BA800ECC522 /* TweetersTableViewController.swift */,
@@ -118,7 +156,6 @@
 				BCD9ADB61E31527F00F6F27E /* Assets.xcassets */,
 				BCD9ADB81E31527F00F6F27E /* LaunchScreen.storyboard */,
 				BCD9ADBB1E31527F00F6F27E /* Info.plist */,
-				BCD9ADB31E31527F00F6F27E /* StanfordTwitter.xcdatamodeld */,
 			);
 			path = StanfordTwitter;
 			sourceTree = "<group>";
@@ -285,11 +322,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEF3F761E353BA800ECC522 /* TweetersTableViewController.swift in Sources */,
+				BC9A821B1E3562A200732527 /* TwitterModel.xcdatamodeld in Sources */,
+				BC4CA6031E35669700D0ADB5 /* TwitterUserEntity2+CoreDataClass.swift in Sources */,
+				BC4CA6011E35669700D0ADB5 /* TweetEntity2+CoreDataClass.swift in Sources */,
+				BC4CA5F91E3565C400D0ADB5 /* TweetEntity+CoreDataClass.swift in Sources */,
+				BC4CA5FB1E3565C400D0ADB5 /* TwitterUserEntity+CoreDataClass.swift in Sources */,
 				BCD9ADDE1E3158D400F6F27E /* TweetTableViewController.swift in Sources */,
+				BC4CA6041E35669700D0ADB5 /* TwitterUserEntity2+CoreDataProperties.swift in Sources */,
+				BC4CA5FA1E3565C400D0ADB5 /* TweetEntity+CoreDataProperties.swift in Sources */,
 				BCD9ADAD1E31527F00F6F27E /* AppDelegate.swift in Sources */,
-				BCD9ADB51E31527F00F6F27E /* StanfordTwitter.xcdatamodeld in Sources */,
 				BCD9ADE91E31816A00F6F27E /* TweetTableViewCell.swift in Sources */,
-				BCEF3F791E353D7500ECC522 /* Model.xcdatamodeld in Sources */,
+				BC4CA6021E35669700D0ADB5 /* TweetEntity2+CoreDataProperties.swift in Sources */,
+				BC4CA5FC1E3565C400D0ADB5 /* TwitterUserEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +484,7 @@
 		BCD9ADD51E31528000F6F27E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VEQC3TC385;
 				INFOPLIST_FILE = StanfordTwitter/Info.plist;
@@ -454,6 +499,7 @@
 		BCD9ADD61E31528000F6F27E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VEQC3TC385;
 				INFOPLIST_FILE = StanfordTwitter/Info.plist;
@@ -561,23 +607,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BCD9ADB31E31527F00F6F27E /* StanfordTwitter.xcdatamodeld */ = {
+		BC9A82191E3562A200732527 /* TwitterModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BCD9ADB41E31527F00F6F27E /* StanfordTwitter.xcdatamodel */,
+				BC9A821A1E3562A200732527 /* TwitterModel.xcdatamodel */,
 			);
-			currentVersion = BCD9ADB41E31527F00F6F27E /* StanfordTwitter.xcdatamodel */;
-			path = StanfordTwitter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		BCEF3F771E353D7500ECC522 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BCEF3F781E353D7500ECC522 /* Model.xcdatamodel */,
-			);
-			currentVersion = BCEF3F781E353D7500ECC522 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = BC9A821A1E3562A200732527 /* TwitterModel.xcdatamodel */;
+			path = TwitterModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
